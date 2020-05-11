@@ -1,0 +1,21 @@
+from tkinter import*
+from tkinter import ttk
+mainframe=Tk()
+mainframe.title("โปรแกรมบวกเลข")
+l_title=ttk.Label(mainframe, text="โปรแกรมบวกเลข",font='20')
+num1=ttk.Label(mainframe, text='ป้อนตัวเลขตัวที่ 1 : ')
+num2=ttk.Label(mainframe, text='ป้อนตัวเลขตัวที่ 2 : ')
+result=ttk.Label(mainframe, text='ผลลัพธ์ : ')
+l_title.grid(column=0, columnspan=2, padx=150, pady=10)
+num1.grid(column=0, row=2, pady=5, sticky='NE')
+num2.grid(column=0, row=3, pady=5,sticky='NE')
+result.grid(column=0, row=4, pady=5, sticky='NE')
+boxnum1=ttk.Entry(mainframe, width=25).grid(column=1,row=2,sticky='W')
+boxnum2=ttk.Entry(mainframe, width=25).grid(column=1,row=3,sticky='W')
+boxresult=ttk.Entry(mainframe,width=25).grid(column=1, row=4,sticky='W')
+butenter=ttk.Button(mainframe, text='Enter',width=10)
+butclear=ttk.Button(mainframe, text='Clear', width=10)
+butenter.grid(column=0,row=5,pady=10,sticky='NE')
+butclear.grid(column=1,row=5,pady=10,sticky='W')
+
+mainframe.mainloop()

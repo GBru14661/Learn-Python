@@ -1,0 +1,16 @@
+from tkinter import*
+from tkinter import ttk
+mainframe=Tk()
+mainframe.title("การจัดวางตำแหน่งด้วยเมธอด grid()")
+ttk.Label(mainframe, text='ชื่อ :').grid(column=0,row=0,padx=2,pady=2,sticky='e')
+ttk.Label(mainframe, text='นามสกุล :').grid(column=0,row=1,padx=2,pady=2,sticky='e')
+ttk.Label(mainframe,text='ที่อยู่ :').grid(column=0,row=2,padx=2,pady=2,sticky='e')
+ttk.Entry(mainframe).grid(column=1,row=0)
+ttk.Entry(mainframe).grid(column=1,row=1)
+ttk.Entry(mainframe).grid(column=1,row=2)
+ttk.Label(mainframe,text='เพศ').grid(column=2,row=0,columnspan=2)
+ttk.Checkbutton(mainframe,text='ชาย').grid(column=2,row=1,padx=20)
+ttk.Checkbutton(mainframe,text='หญิง').grid(column=2,row=2,padx=20)
+ttk.Button(mainframe,text='ลงทะเบียน').grid(column=1,row=3,pady=10)
+ttk.Button(mainframe,text='ยกเลิก').grid(column=2,row=3,pady=10)
+mainframe.mainloop()

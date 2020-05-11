@@ -1,0 +1,18 @@
+from tkinter import*
+from tkinter import ttk
+mainframe=Tk()
+ttk.Frame(mainframe,height=180,width=250).pack()
+
+ttk.Button(mainframe,text='Enter').place(height=30,width=80)
+ttk.Button(mainframe,text='Cancel').place(height=30,width=80,x=85,y=0)
+ttk.Button(mainframe,text='Clear').place(height=30,width=80,x=170,y=0)
+
+ttk.Button(mainframe,text='Enter').place(height=30,width=80,x=85,y=40)
+ttk.Button(mainframe,text='Cancel').place(height=30,width=80,x=85,y=70)
+ttk.Button(mainframe,text='Clear').place(height=30,width=80,x=85,y=100)
+
+ttk.Button(mainframe,text='Enter').place(height=30,width=80,x=0,y=140)
+ttk.Button(mainframe,text='Cancel').place(height=30,width=80,x=85,y=140)
+ttk.Button(mainframe,text='Clear').place(height=30,width=80,x=170,y=140)
+
+mainframe.mainloop()

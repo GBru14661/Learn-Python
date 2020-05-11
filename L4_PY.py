@@ -1,0 +1,33 @@
+dic1={1:"Suppawit",2:"Chanon",3:"Thanat"}
+dic2={4:"Titiwut",5:"Pongsagon"}
+aaa={"aaa",11,22}
+print(dic1)
+print(dic2)
+subject={"TH":("Thai","Social","History"),"EN":("English","Biology","Chemistry")}
+print(dic1)
+dic3=dic2.copy()
+print(dic3)
+del subject["TH"]
+print(subject)
+ppp=dict.fromkeys(aaa,"subject")
+print(ppp)
+print(subject.get("TH"))
+print(dic2.items())
+print(subject.keys())
+print(dic2.pop(4,["non"]))
+print(dic2)
+print(subject.popitem())
+print(subject)
+print(dic1.setdefault(1,["Titikorn"]))
+print(dic1)
+print(dic1.values())
+print(len(dic1))
+print(dic1.get(2))
+print(dic1.keys())
+del dic1[1]
+print(dic1)
+dic2["6"]="Phassanon"
+print(dic2)
+dic2[5]="por"
+print(dic2)
+print(type(dic2))
